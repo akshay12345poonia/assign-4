@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+
+.title {
+    color: pink;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* Card container styling */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual card styling */
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+/* Specific card colors */
+.yellow {
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+}
+
+.pink {
+    background-color: pink;
+    box-shadow: 0 0 25px pink;
+}
+
+.red {
+    background-color: red;
+    box-shadow: 0 0 25px red;
+}
+
+.green {
+    background-color: green;
+    box-shadow: 0 0 25px green;
+}
+
+
+.card:hover {
+    opacity: 1; 
+}
+
+.cards:hover .card:not(:hover) {
+    opacity: 0.3; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">CARDS</h1>
+        <div class="cards">
+            <div class="card yellow"></div>
+            <div class="card pink"></div>
+            <div class="card red"></div>
+            <div class="card green"></div>
+        </div>
+    </div>
+</body>
+</html>
